@@ -1,0 +1,30 @@
+/* Button hover with smooth color transition */
+#clickButton {
+  background-color: lightblue;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clickButton:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Keyframe animation for blink effect */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Message with blink animation */
+#message.blink {
+  animation: blink 1s infinite;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
